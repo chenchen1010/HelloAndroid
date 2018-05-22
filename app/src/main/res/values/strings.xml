@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">简易计算器</string>
+    <string name="action_settings">提交作业</string>
+    <string name="Hello">hello world!</string>
+    <string name="packagename">包名: cn.zju.id21732092.chenzhongqi</string>
+    <string name="num">140</string>
+    <string name="send">发布</string>
+    <string name="hint">有什么新鲜事...</string>
+</resources>
