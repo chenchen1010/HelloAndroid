@@ -14,10 +14,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="3976323"
+        android:text=""
         android:textSize="60sp"
         android:textColor="#1fef08"
-        android:gravity="right"/>
+        android:gravity="right"
+        android:id="@+id/tv"
+        android:singleLine="true"
+        android:ellipsize="start"
+        android:scrollbars="horizontal"/>
 
     <GridLayout
         android:layout_width="match_parent"
@@ -76,7 +80,7 @@
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:text="*"
-            android:id="@+id/c_delete"
+            android:id="@+id/c_mul"
             />
 
         <Button
@@ -101,13 +105,13 @@
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:text="-"
-            android:id="@+id/c_add"
+            android:id="@+id/c_minus"
             />
         <Button
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:text="C"
-            android:id="@+id/c_aord"
+            android:id="@+id/c_delete"
             />
         <Button
             android:layout_width="85dp"
@@ -119,13 +123,13 @@
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:text="="
-            android:id="@+id/c_point"
+            android:id="@+id/c_equal"
             />
         <Button
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:text="+"
-            android:id="@+id/c_equal"
+            android:id="@+id/c_add"
             />
     </GridLayout>
 
