@@ -97,7 +97,7 @@ public class CalcActivity extends AppCompatActivity implements View.OnClickListe
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            new SubmitProgram().doSubmit(this,"B2");
+            new SubmitProgram().doSubmit(this,"C1");
             return true;
         }
 
