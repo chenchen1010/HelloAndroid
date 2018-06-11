@@ -1,8 +1,12 @@
 package cn.zju.id21732092.chenzhongqi;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -78,11 +82,20 @@ public class StatusActivity extends AppCompatActivity{
     private final class PostTask extends AsyncTask<String, Void, String> {
 
 
-        private String username = "student";
-        private String password = "password";
+      //  private String username = "student";
+       // private String password = "password";
 
         @Override
         protected String doInBackground(String... params) {
+
+            SharedPreferences prefs =
+                    PreferenceManager.getDefaultSharedPreferences(StatusActivity.this);
+            String username = prefs.getString("username","");
+            String password = prefs.getString("password","");
+            if(TextUtils.isEmpty(username)||TextUtils.isEmpty(password)){
+                startActivity(new Intent(StatusActivity.this,SettingsActivity.class));
+                return "Please update your username ad password";
+            }
 
             YambaClient yambaClloud = new YambaClient(username,password);
             try {

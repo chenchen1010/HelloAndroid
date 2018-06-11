@@ -48,7 +48,7 @@ public class HelloActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            new SubmitProgram().doSubmit(this,"A1");
+            new SubmitProgram().doSubmit(this,"E2");
             return true;
         }
 
