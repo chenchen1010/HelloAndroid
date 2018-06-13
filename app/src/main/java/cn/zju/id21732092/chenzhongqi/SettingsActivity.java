@@ -48,27 +48,5 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
 
-//    private final class PostTask extends AsyncTask<String,void,String>{
-//
-//        @Override
-//        protected String doInBackground(String... params) {
-//            SharedPreferences prefs =
-//                    PreferenceManager.getDefaultSharedPreferences(StatusActivity.this);
-//            String username = prefs.getString("username","");
-//            String password = prefs.getString("password","");
-//            if(TextUtils.isEmpty(username)||TextUtils.isEmpty(password)){
-//                startActivity(new Intent(StatusActivity.this,SettingsActivity.class));
-//                return "Please update your username ad password";
-//            }
-//
-//            YambaClient yambaCloud = new YambaClient(username,password);
-//            try {
-//                yambaCloud.postStatus(params[0]);
-//                return "Successfully posted";
-//            } catch (YambaClientException e) {
-//                e.printStackTrace();
-//            }
-//
-//        }
-//    }
+
 }
