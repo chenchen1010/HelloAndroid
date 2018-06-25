@@ -15,4 +15,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">浙江大学Android课程</string>
+    <string name="stopService">停止服务</string>
+    <string name="submit">提交作业</string>
 </resources>
